@@ -85,9 +85,11 @@ body {
 .imglem {
     padding-left: 24px;
 }
+
 .imgphar {
     padding-left: 24px;
 }
+
 .imgpop {
     padding-left: 24px;
 }
@@ -97,38 +99,73 @@ article {
     justify-items: center;
     width: 23%;
     height: 300px;
-    margin: 11px 18px 15px 10px;
+    margin: 11px 17.4px 15px 10px;
     background-color: #FDF0F0;
     border-radius: 15px;
     box-shadow: 5px 1px 7px #F1B4BB;
 }
 
 /* fim da edição da home */
+
+/* editando tela cadastro */
+
+/* editando tela inteira */
 .container_input {
+    margin-top: 2%;
     margin-left: 25%;
-    background-color: #1F4172;
-    color: #FDF0F0;
+    background-color: #FDF0F0;
+    color: #000000;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.979);
     width: 700px;
+}
+
+.textHome {
+    text-align: center;
+}
+
+select {
+    margin: 0px 0px 0px 290px;
+}
+p{
     text-align: center;
 }
 
 h2 {
-    color: #FDF0F0;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 0;
+    text-transform: uppercase;
+    font-weight: 20px;
+    font-family: 'Roboto Slab', serif;
 }
 
 input {
-    width: 100%;
+    width: 50%;
+    border-radius: 8px;
     padding: 8px;
-    margin-bottom: 5px;
     box-sizing: border-box;
 }
 
-a {
-    color: #F1B4BB;
+form {
+    margin: 20px;
+    text-align: center;
+}
 
+a {
+    color: #1F4172;
+
+}
+
+fieldset {
+    width: 70%;
+}
+
+label {
+    display: block;
+    width: 400px;
+    text-align: left;
 }
 
 input:focus {
@@ -138,7 +175,7 @@ input:focus {
 
 button {
     background-color: #F1B4BB;
-    color: #1F4172;
+    color: #ffffff;
     padding: 10px 15px;
     border: none;
     border-radius: 4px;

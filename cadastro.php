@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
     <title>Cadastro - Farmácia</title>
 </head>
 <body>
-<div class="container_input">
-        <h2>Cadastrar</h2>
+
+    <div class="container_input">
+        <h2 class="textHome" >Cadastrar</h2>
         <label>Escolha a Farmácia de sua preferência</label><br><br>
         <select name="opcao">
             <option value="0"></option>
@@ -17,30 +21,34 @@
             <option value="3">Farmácia C</option>
             <option value="4">Farmácia D</option>
         </select><br><br>
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+            <form action="inserir.php" method="POST">
             <label for="nome">Nome completo:</label>
             <input type="text" name="nome" required>
-            <br>
+
             <label for="rg">RG:</label>
             <input type="text" name="rg" required>
-            <br>
+
             <label for="telefone">Telefone:</label>
-            <input type="tel" name="telefone" required>
-            <br>
-            <label for="plano_saude">Possui Plano de Saúde?</label>
-            <br>
-            Sim <input type="radio" name="plano_saude" value="Sim">
+            <input type="tel" name="telefone" required><br><br>
+
+            <label for="plano_saude">Possui Plano de Saúde?</label><br>
+
+            Sim <input type="radio" name="plano_saude" value="Sim"><br>
             Nao <input type="radio" name="plano_saude" value="Não" checked>
             <br><br>
-            <label for="farmacia_popular">Utiliza Farmácia Popular?</label>
-            <br>
-            Sim <input type="radio" name="farmacia_popular" value="Sim">
+
+            <label for="farmacia_popular">Utiliza Farmácia Popular?</label><br>
+
+            Sim <input type="radio" name="farmacia_popular" value="Sim"> <br>
             Não <input type="radio" name="farmacia_popular" value="Não" checked>
-            <br>
-            <label for="produtos_farmacia_popular">Quais produtos da Farmácia Popular você utiliza?</label>
-            <input type="text" name="produtos_farmacia_popular" id="produtos_farmacia_popular" checked>
+            <br><br>
             
-            <button type="submit">Enviar</button>
+
+            <label for="produtos_farmacia_popular">Quais produtos da Farmácia Popular você utiliza?</label><br>
+            <input type="text" name="produtos_farmacia_popular" id="produtos_farmacia_popular" checked>
+
+            <br><br>
+            <button type="submit">Enviar</button><br><br>
             <br>
 
             <?php
