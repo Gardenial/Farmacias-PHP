@@ -10,6 +10,7 @@
     <title>Cadastro - Farmácia</title>
 </head>
 <body>
+   
 
     <div class="container_input">
         <h2 class="textHome" >Cadastrar</h2>

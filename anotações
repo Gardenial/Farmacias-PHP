@@ -10,3 +10,11 @@ _____________________________________________
 
 Usuário administrador
 Qual farmácia tem mais usuários cadastrados? -->
+
+
+ <?php
+        namespace POO\Farmacias;
+        require_once('Crud/inserir.php');//Requisitando o uso do arquivo pessoa
+        use POO\Farmacias\Crud\inserir;
+
+?>
